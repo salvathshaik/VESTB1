@@ -3,29 +3,29 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Sign-Up/Login Form</title>
+  <title>Register a vehicle</title>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   
-	  <link rel="stylesheet" href="css/login.css">
+	  <link rel="stylesheet" href="css/registeravehicle.css">
  <style>
  .afterlog{
    color:white;
  }
- 
+
  .fixedbutton {
-  position: fixed;
-    bottom: 0px;
-    top: 0%;
-    right: 0px;
-}
+					position: fixed;
+					bottom: 0px;
+					top: 2%;
+					right: 18px;
+					color: blueviolet;
+						}
+ 
  </style>
 	  
   
 </head>
-
-<a href="index.html"><img class="fixedbutton" src="signoutH.png" width="80" height="40" alt="Home"></a>
 
 <body>
 
@@ -36,52 +36,62 @@
 
   <div class="form">
       
-      <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Sign Up</a></li>
-        <li class="tab"><a href="#login">Log In</a></li>
+      <ul class="tab-group" >
+        <li class="tab active"><a href="#signup">Register a vehicle</a></li>
       </ul>
       
       <div class="tab-content">
         <div id="signup">   
-          <h1>Sign Up</h1>
+          <h1>Register a vehicle</h1>
           
           <form action="/" method="post">
           
 			<div class="field-wrap">
 				<label>
-				  Enter Name
+				  Vehicle Number<span class="req">*</span>
 				</label>
 				<input type="vehicle"required autocomplete="off"/>
 			  </div>
 
           <div class="field-wrap">
             <label>
-              Enter email
+              Vehicle Model<span class="req">*</span>
             </label>
             <input type="model"required autocomplete="off"/>
 		  </div>
 		  <div class="field-wrap">
             <label>
-              Enter phone
+              Amout Bought<span class="req">*</span>
             </label>
             <input type="amount"required autocomplete="off"/>
 		  </div>
 		  <div class="field-wrap">
             <label>
-              Enter Aadhar id
+              Owner Name<span class="req">*</span>
             </label>
             <input type="name"required autocomplete="off"/>
 		  </div>
 		  <div class="field-wrap">
             <label>
-              Enter Wallet Address<span class="req">*</span>
+              Owner Identity<span class="req">*</span>
             </label>
             <input type="identity"required autocomplete="off"/>
 		  </div>
-		
+		  <div class="field-wrap">
+            <label>
+            Vehicle Manufacturer<span class="req">*</span>
+            </label>
+            <input type="manufacturer"required autocomplete="off"/>
+		  </div>
+		  <div class="field-wrap">
+            <label>
+              Vehicle Features<span class="req">*</span>
+            </label>
+            <input type="features"required autocomplete="off"/>
+          </div>
           
           
-          <button type="submit"  class="tab button button-block "/><a class="afterlog" href="#login">Get started</a></button>
+          <button type="submit"  class="button button-block "/><a class="afterlog" href="afterloginmenus.html">Get started</a></button>
           
           </form>
 
@@ -94,7 +104,7 @@
           
             <div class="field-wrap">
             <label>
-              Enter Wallet Address<span class="req">*</span>
+              Enter Address<span class="req">*</span>
             </label>
             <input type="email"required autocomplete="off"/>
           </div>
@@ -103,7 +113,7 @@
           
           <p class="forgot"><a href="#">Forgot Password?</a></p>
           
-          <button class="button button-block"/><a class="afterlog" href="afterloginmenus.html">Log In</a></button>
+          <!-- <button class="button button-block"/><a class="afterlog" href="menudropdown.html">Log In</a></button> -->
           
           </form>
 
@@ -188,6 +198,9 @@ $('.tab a').on('click', function (e) {
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>   
     <script src="js/main.js"></script>
+
+    <a class="fixedbutton" href="afterloginmenus.html">Back</a>
+
 </body>
 
 </html>
